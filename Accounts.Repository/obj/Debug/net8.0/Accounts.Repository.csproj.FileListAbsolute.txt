@@ -15,3 +15,4 @@ C:\Users\ASUS\RiderProjects\Accounts\Accounts.Repository\obj\Debug\net8.0\refint
 C:\Users\ASUS\RiderProjects\Accounts\Accounts.Repository\obj\Debug\net8.0\Accounts.Repository.pdb
 C:\Users\ASUS\RiderProjects\Accounts\Accounts.Repository\obj\Debug\net8.0\Accounts.Repository.genruntimeconfig.cache
 C:\Users\ASUS\RiderProjects\Accounts\Accounts.Repository\obj\Debug\net8.0\ref\Accounts.Repository.dll
+C:\Users\ASUS\RiderProjects\Accounts\Accounts.Repository\obj\Debug\net8.0\Accounts.Repository.sourcelink.json

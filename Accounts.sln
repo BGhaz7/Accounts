@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accounts.Repository", "Acco
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accounts.Models", "Accounts.Models\Accounts.Models.csproj", "{B028137E-0F84-45FB-8E70-223CB307013A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{6D4ACF58-3BC3-4B59-B4F3-265D3C46468C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{B028137E-0F84-45FB-8E70-223CB307013A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B028137E-0F84-45FB-8E70-223CB307013A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B028137E-0F84-45FB-8E70-223CB307013A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D4ACF58-3BC3-4B59-B4F3-265D3C46468C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D4ACF58-3BC3-4B59-B4F3-265D3C46468C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D4ACF58-3BC3-4B59-B4F3-265D3C46468C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D4ACF58-3BC3-4B59-B4F3-265D3C46468C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

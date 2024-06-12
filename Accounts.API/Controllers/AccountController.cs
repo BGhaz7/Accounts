@@ -8,6 +8,7 @@ using System.Text;
 using Accounts.Service.Security;
 using EasyNetQ;
 using Microsoft.AspNetCore.Authorization;
+using Shared.Messages;
 
 
 namespace Accounts.Api.Controllers
@@ -31,12 +32,12 @@ namespace Accounts.Api.Controllers
         public async Task<IActionResult> Register(UserRegisterDto userRegisterDto)
         {
             var user = await _userService.RegisterUserAsync(userRegisterDto);
-            await _bus.PubSub.PublishAsync(new
+            var message = new WalletCreateMessage
             {
-                UserId = user.Id,
-                FirstName = user.Fname,
-                Email = user.Email
-            });
+                UserId = user.Id
+            };
+            Console.WriteLine($"Published message: {message}");
+            await _bus.PubSub.PublishAsync(message);
             return CreatedAtAction(nameof(GetUserById), new { id = user.Id }, user);
         }
 

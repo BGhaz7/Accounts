@@ -12,3 +12,4 @@ C:\Users\ASUS\RiderProjects\Accounts\Accounts.Models\obj\Debug\net8.0\refint\Acc
 C:\Users\ASUS\RiderProjects\Accounts\Accounts.Models\obj\Debug\net8.0\Accounts.Models.pdb
 C:\Users\ASUS\RiderProjects\Accounts\Accounts.Models\obj\Debug\net8.0\Accounts.Models.genruntimeconfig.cache
 C:\Users\ASUS\RiderProjects\Accounts\Accounts.Models\obj\Debug\net8.0\ref\Accounts.Models.dll
+C:\Users\ASUS\RiderProjects\Accounts\Accounts.Models\obj\Debug\net8.0\Accounts.Models.sourcelink.json

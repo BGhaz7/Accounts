@@ -17,3 +17,6 @@ C:\Users\ASUS\RiderProjects\Accounts\Accounts.Service\obj\Debug\net8.0\refint\Ac
 C:\Users\ASUS\RiderProjects\Accounts\Accounts.Service\obj\Debug\net8.0\Accounts.Service.pdb
 C:\Users\ASUS\RiderProjects\Accounts\Accounts.Service\obj\Debug\net8.0\Accounts.Service.genruntimeconfig.cache
 C:\Users\ASUS\RiderProjects\Accounts\Accounts.Service\obj\Debug\net8.0\ref\Accounts.Service.dll
+C:\Users\ASUS\RiderProjects\Accounts\Accounts.Service\bin\Debug\net8.0\Shared.dll
+C:\Users\ASUS\RiderProjects\Accounts\Accounts.Service\bin\Debug\net8.0\Shared.pdb
+C:\Users\ASUS\RiderProjects\Accounts\Accounts.Service\obj\Debug\net8.0\Accounts.Service.sourcelink.json

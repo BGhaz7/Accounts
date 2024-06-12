@@ -120,3 +120,6 @@ C:\Users\ASUS\RiderProjects\Accounts\Accounts.API\obj\Debug\net8.0\Accounts.API.
 C:\Users\ASUS\RiderProjects\Accounts\Accounts.API\obj\Debug\net8.0\Accounts.API.genruntimeconfig.cache
 C:\Users\ASUS\RiderProjects\Accounts\Accounts.API\obj\Debug\net8.0\ref\Accounts.API.dll
 C:\Users\ASUS\RiderProjects\Accounts\Accounts.API\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\ASUS\RiderProjects\Accounts\Accounts.API\bin\Debug\net8.0\Shared.dll
+C:\Users\ASUS\RiderProjects\Accounts\Accounts.API\bin\Debug\net8.0\Shared.pdb
+C:\Users\ASUS\RiderProjects\Accounts\Accounts.API\obj\Debug\net8.0\Accounts.API.sourcelink.json

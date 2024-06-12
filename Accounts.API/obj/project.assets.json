@@ -1210,13 +1210,24 @@
           "EasyNetQ": "7.8.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.6",
           "Microsoft.EntityFrameworkCore": "8.0.6",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.4"
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.4",
+          "Shared": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Accounts.Service.dll": {}
         },
         "runtime": {
           "bin/placeholder/Accounts.Service.dll": {}
+        }
+      },
+      "Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.dll": {}
         }
       }
     }
@@ -3254,6 +3265,11 @@
       "type": "project",
       "path": "../Accounts.Service/Accounts.Service.csproj",
       "msbuildProject": "../Accounts.Service/Accounts.Service.csproj"
+    },
+    "Shared/1.0.0": {
+      "type": "project",
+      "path": "../Shared/Shared.csproj",
+      "msbuildProject": "../Shared/Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3268,6 +3284,7 @@
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.6",
       "Newtonsoft.Json >= 13.0.3",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 8.0.4",
+      "Shared >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -3303,6 +3320,9 @@
             },
             "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Accounts.Service\\Accounts.Service.csproj": {
               "projectPath": "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Accounts.Service\\Accounts.Service.csproj"
+            },
+            "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Shared\\Shared.csproj": {
+              "projectPath": "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Shared\\Shared.csproj"
             }
           }
         }

@@ -4,7 +4,6 @@ using Accounts.Repository.Interfaces;
 using Accounts.Service.Interfaces;
 using Accounts.Service.Security;
 using System.Threading.Tasks;
-
 namespace Accounts.Service.Services
 {
     public class UserService : IUserService
