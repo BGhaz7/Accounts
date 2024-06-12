@@ -1,0 +1,14 @@
+C:\Users\ASUS\RiderProjects\Accounts\Accounts.Models\bin\Debug\net8.0\Accounts.Models.deps.json
+C:\Users\ASUS\RiderProjects\Accounts\Accounts.Models\bin\Debug\net8.0\Accounts.Models.runtimeconfig.json
+C:\Users\ASUS\RiderProjects\Accounts\Accounts.Models\bin\Debug\net8.0\Accounts.Models.dll
+C:\Users\ASUS\RiderProjects\Accounts\Accounts.Models\bin\Debug\net8.0\Accounts.Models.pdb
+C:\Users\ASUS\RiderProjects\Accounts\Accounts.Models\obj\Debug\net8.0\Accounts.Models.csproj.AssemblyReference.cache
+C:\Users\ASUS\RiderProjects\Accounts\Accounts.Models\obj\Debug\net8.0\Accounts.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\RiderProjects\Accounts\Accounts.Models\obj\Debug\net8.0\Accounts.Models.AssemblyInfoInputs.cache
+C:\Users\ASUS\RiderProjects\Accounts\Accounts.Models\obj\Debug\net8.0\Accounts.Models.AssemblyInfo.cs
+C:\Users\ASUS\RiderProjects\Accounts\Accounts.Models\obj\Debug\net8.0\Accounts.Models.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\RiderProjects\Accounts\Accounts.Models\obj\Debug\net8.0\Accounts.Models.dll
+C:\Users\ASUS\RiderProjects\Accounts\Accounts.Models\obj\Debug\net8.0\refint\Accounts.Models.dll
+C:\Users\ASUS\RiderProjects\Accounts\Accounts.Models\obj\Debug\net8.0\Accounts.Models.pdb
+C:\Users\ASUS\RiderProjects\Accounts\Accounts.Models\obj\Debug\net8.0\Accounts.Models.genruntimeconfig.cache
+C:\Users\ASUS\RiderProjects\Accounts\Accounts.Models\obj\Debug\net8.0\ref\Accounts.Models.dll
