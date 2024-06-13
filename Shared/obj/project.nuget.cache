@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wggs94+kg5UTFnFKW3S2Qe1GeeLVJr5GVlAh4znq5tTk7A1VX4TgTlSV8x5VrvUn/kLHhpCsdaH0bP5nSdFt/Q==",
+  "dgSpecHash": "RW8Gdwb47sGg82bsLP1kTlx0kQTTokUE0aD/BqZ+mQuqPiE5EfEP+sHUIX+urq+SmTR1aO6JNGqXVkcZH9+fIw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Shared\\Shared.csproj",
+  "projectFilePath": "/Users/badr/RiderProjects/Accounts/Shared/Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
