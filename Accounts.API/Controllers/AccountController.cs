@@ -4,11 +4,13 @@ using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using System.IdentityModel.Tokens.Jwt;
 using System.Net.Http.Headers;
+using System.Runtime.InteropServices.JavaScript;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Accounts.Service.Security;
 using EasyNetQ;
 using Microsoft.AspNetCore.Authorization;
+using Newtonsoft.Json;
 using Shared.Messages;
 
 
@@ -96,14 +98,35 @@ namespace Accounts.Api.Controllers
 
         [Authorize]
         [HttpPost("topup")]
-        public async Task<IActionResult> Topup()
+        public async Task<IActionResult> Topup([FromBody] TopUpDto topUpDto)
         {
             var authHeader = Request.Headers["Authorization"].ToString();
             var token = authHeader.Substring("Bearer ".Length).Trim();
             var userId = _jwtToken.ExtractIdFromJwtToken(token);
             var client = _httpClientFactory.CreateClient();
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-            var response = await client.GetAsync($"http://localhost:5249/v1/payments/transactions/{userId}");
+            var requestContent =
+                new StringContent(JsonConvert.SerializeObject(new { UserId = userId, topUpDto.Amount }), Encoding.UTF8,
+                    "application/json");
+            var response = await client.PostAsync($"http://localhost:5249/v1/payments/topup", requestContent);
+            if (response.IsSuccessStatusCode)
+            {
+                var transactions = await response.Content.ReadAsStringAsync();
+                return Ok(transactions);
+            }
+            return StatusCode((int)response.StatusCode, await response.Content.ReadAsStringAsync());
+        }
+        
+        [Authorize]
+        [HttpGet("balance")]
+        public async Task<IActionResult> Balance()
+        {
+            var authHeader = Request.Headers["Authorization"].ToString();
+            var token = authHeader.Substring("Bearer ".Length).Trim();
+            var userId = _jwtToken.ExtractIdFromJwtToken(token);
+            var client = _httpClientFactory.CreateClient();
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            var response = await client.GetAsync($"http://localhost:5249/v1/payments/wallet/{userId}");
             if (response.IsSuccessStatusCode)
             {
                 var transactions = await response.Content.ReadAsStringAsync();
