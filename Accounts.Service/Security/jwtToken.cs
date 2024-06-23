@@ -26,5 +26,17 @@ namespace Accounts.Service.Security
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
+
+        public int ExtractIdFromJwtToken(string token)
+        {
+            var handler = new JwtSecurityTokenHandler();
+            var jwtToken = handler.ReadJwtToken(token);
+            var userIdClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == JwtRegisteredClaimNames.NameId);
+            if (userIdClaim == null)
+            {
+                throw new InvalidOperationException("Token does not contain a user ID.");
+            }
+            return int.Parse(userIdClaim.Value);
+        }
     }
 }

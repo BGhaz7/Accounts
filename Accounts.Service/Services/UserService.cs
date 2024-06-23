@@ -65,5 +65,6 @@ namespace Accounts.Service.Services
             await _userRepository.UpdateUserAsync(user);
             return user;
         }
+        
     }
 }

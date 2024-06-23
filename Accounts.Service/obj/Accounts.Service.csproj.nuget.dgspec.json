@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/badr/RiderProjects/Accounts/Accounts.Service/Accounts.Service.csproj": {}
+    "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Accounts.Service\\Accounts.Service.csproj": {}
   },
   "projects": {
-    "/Users/badr/RiderProjects/Accounts/Accounts.Models/Accounts.Models.csproj": {
+    "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Accounts.Models\\Accounts.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/badr/RiderProjects/Accounts/Accounts.Models/Accounts.Models.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Accounts.Models\\Accounts.Models.csproj",
         "projectName": "Accounts.Models",
-        "projectPath": "/Users/badr/RiderProjects/Accounts/Accounts.Models/Accounts.Models.csproj",
-        "packagesPath": "/Users/badr/.nuget/packages/",
-        "outputPath": "/Users/badr/RiderProjects/Accounts/Accounts.Models/obj/",
+        "projectPath": "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Accounts.Models\\Accounts.Models.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Accounts.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/badr/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -83,34 +85,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/badr/RiderProjects/Accounts/Accounts.Repository/Accounts.Repository.csproj": {
+    "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Accounts.Repository\\Accounts.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/badr/RiderProjects/Accounts/Accounts.Repository/Accounts.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Accounts.Repository\\Accounts.Repository.csproj",
         "projectName": "Accounts.Repository",
-        "projectPath": "/Users/badr/RiderProjects/Accounts/Accounts.Repository/Accounts.Repository.csproj",
-        "packagesPath": "/Users/badr/.nuget/packages/",
-        "outputPath": "/Users/badr/RiderProjects/Accounts/Accounts.Repository/obj/",
+        "projectPath": "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Accounts.Repository\\Accounts.Repository.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Accounts.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/badr/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/badr/RiderProjects/Accounts/Accounts.Models/Accounts.Models.csproj": {
-                "projectPath": "/Users/badr/RiderProjects/Accounts/Accounts.Models/Accounts.Models.csproj"
+              "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Accounts.Models\\Accounts.Models.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Accounts.Models\\Accounts.Models.csproj"
               }
             }
           }
@@ -170,40 +174,42 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/badr/RiderProjects/Accounts/Accounts.Service/Accounts.Service.csproj": {
+    "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Accounts.Service\\Accounts.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/badr/RiderProjects/Accounts/Accounts.Service/Accounts.Service.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Accounts.Service\\Accounts.Service.csproj",
         "projectName": "Accounts.Service",
-        "projectPath": "/Users/badr/RiderProjects/Accounts/Accounts.Service/Accounts.Service.csproj",
-        "packagesPath": "/Users/badr/.nuget/packages/",
-        "outputPath": "/Users/badr/RiderProjects/Accounts/Accounts.Service/obj/",
+        "projectPath": "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Accounts.Service\\Accounts.Service.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Accounts.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/badr/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/badr/RiderProjects/Accounts/Accounts.Models/Accounts.Models.csproj": {
-                "projectPath": "/Users/badr/RiderProjects/Accounts/Accounts.Models/Accounts.Models.csproj"
+              "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Accounts.Models\\Accounts.Models.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Accounts.Models\\Accounts.Models.csproj"
               },
-              "/Users/badr/RiderProjects/Accounts/Accounts.Repository/Accounts.Repository.csproj": {
-                "projectPath": "/Users/badr/RiderProjects/Accounts/Accounts.Repository/Accounts.Repository.csproj"
+              "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Accounts.Repository\\Accounts.Repository.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Accounts.Repository\\Accounts.Repository.csproj"
               },
-              "/Users/badr/RiderProjects/Accounts/Shared/Shared.csproj": {
-                "projectPath": "/Users/badr/RiderProjects/Accounts/Shared/Shared.csproj"
+              "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Shared\\Shared.csproj"
               }
             }
           }
@@ -263,26 +269,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/badr/RiderProjects/Accounts/Shared/Shared.csproj": {
+    "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/badr/RiderProjects/Accounts/Shared/Shared.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "/Users/badr/RiderProjects/Accounts/Shared/Shared.csproj",
-        "packagesPath": "/Users/badr/.nuget/packages/",
-        "outputPath": "/Users/badr/RiderProjects/Accounts/Shared/obj/",
+        "projectPath": "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Shared\\Shared.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/badr/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -316,7 +324,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
