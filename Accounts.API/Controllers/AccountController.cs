@@ -9,7 +9,9 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Accounts.Service.Security;
 using EasyNetQ;
+using Investment.Models.Dtos;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.VisualBasic.CompilerServices;
 using Newtonsoft.Json;
 using Shared.Messages;
 
@@ -127,6 +129,65 @@ namespace Accounts.Api.Controllers
             var client = _httpClientFactory.CreateClient();
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             var response = await client.GetAsync($"http://localhost:5249/v1/payments/wallet/{userId}");
+            if (response.IsSuccessStatusCode)
+            {
+                var transactions = await response.Content.ReadAsStringAsync();
+                return Ok(transactions);
+            }
+            return StatusCode((int)response.StatusCode, await response.Content.ReadAsStringAsync());
+        }
+
+
+        [Authorize]
+        [HttpPost("project")]
+        public async Task<IActionResult> CreateProject([FromBody] ProjectDto projectDto)
+        {
+            var authHeader = Request.Headers["Authorization"].ToString();
+            var token = authHeader.Substring("Bearer ".Length).Trim();
+            var requestContent =
+                new StringContent(JsonConvert.SerializeObject(projectDto), Encoding.UTF8,
+                    "application/json");
+            var client = _httpClientFactory.CreateClient();
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            var response = await client.PostAsync("http://localhost:5013/v1/project",requestContent);
+            if (response.IsSuccessStatusCode)
+            {
+                var transactions = await response.Content.ReadAsStringAsync();
+                return Ok(transactions);
+            }
+            return StatusCode((int)response.StatusCode, await response.Content.ReadAsStringAsync());
+        }
+        
+        [Authorize]
+        [HttpGet("projects")]
+        public async Task<IActionResult> GetProjects()
+        {
+            var authHeader = Request.Headers["Authorization"].ToString();
+            var token = authHeader.Substring("Bearer ".Length).Trim();
+            var client = _httpClientFactory.CreateClient();
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            var response = await client.GetAsync("http://localhost:5013/v1/projects");
+            if (response.IsSuccessStatusCode)
+            {
+                var transactions = await response.Content.ReadAsStringAsync();
+                return Ok(transactions);
+            }
+
+            return StatusCode((int)response.StatusCode, await response.Content.ReadAsStringAsync());
+        }
+
+        [Authorize]
+        [HttpPost("invest")]
+        public async Task<IActionResult> Invest([FromBody] InvestTransactDto investTransactDto)
+        {
+            var authHeader = Request.Headers["Authorization"].ToString();
+            var token = authHeader.Substring("Bearer ".Length).Trim();
+            var requestContent =
+                new StringContent(JsonConvert.SerializeObject(investTransactDto), Encoding.UTF8,
+                    "application/json");
+            var client = _httpClientFactory.CreateClient();
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            var response = await client.PostAsync("http://localhost:5013/v1/invest", requestContent);
             if (response.IsSuccessStatusCode)
             {
                 var transactions = await response.Content.ReadAsStringAsync();

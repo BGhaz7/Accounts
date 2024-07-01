@@ -10,11 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61c61317-eb10-42d2-84c1-d330ec66d87f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Accounts.Models/Dtos/TopUpDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/apphost" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Accounts.Models/Dtos/InvestTransactDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Accounts.Models/Dtos/ProjectDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Accounts/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Accounts/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.API/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/Controllers/AccountController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.API/bin/Debug/net8.0/Accounts.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/bin/Debug/net8.0/Accounts.API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts.API/bin/Debug/net8.0/Accounts.API.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/bin/Debug/net8.0/Accounts.API.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.API/bin/Debug/net8.0/Accounts.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/bin/Debug/net8.0/Accounts.API.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.API/bin/Debug/net8.0/Accounts.Models.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/bin/Debug/net8.0/Accounts.Models.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.API/bin/Debug/net8.0/Accounts.Models.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/bin/Debug/net8.0/Accounts.Models.pdb" afterDir="false" />
@@ -22,52 +23,128 @@
       <change beforePath="$PROJECT_DIR$/Accounts.API/bin/Debug/net8.0/Accounts.Repository.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/bin/Debug/net8.0/Accounts.Repository.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.API/bin/Debug/net8.0/Accounts.Service.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/bin/Debug/net8.0/Accounts.Service.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.API/bin/Debug/net8.0/Accounts.Service.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/bin/Debug/net8.0/Accounts.Service.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.API/bin/Debug/net8.0/Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/bin/Debug/net8.0/Shared.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.API/bin/Debug/net8.0/Shared.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/bin/Debug/net8.0/Shared.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.API/obj/Accounts.API.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/Accounts.API.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.API/obj/Accounts.API.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/Accounts.API.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.API/obj/Accounts.API.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/Accounts.API.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/ref/Accounts.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/ref/Accounts.API.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/refint/Accounts.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/refint/Accounts.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Accounts.API.props" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Accounts.API.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Accounts.API.props" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Accounts.API.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.API/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.API/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.API/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.API/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Models/bin/Debug/net8.0/Accounts.Models.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Models/bin/Debug/net8.0/Accounts.Models.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Models/bin/Debug/net8.0/Accounts.Models.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Models/bin/Debug/net8.0/Accounts.Models.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Models/obj/Accounts.Models.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Models/obj/Accounts.Models.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Models/obj/Accounts.Models.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Models/obj/Accounts.Models.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Models/obj/Accounts.Models.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Models/obj/Accounts.Models.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Models/obj/Debug/net8.0/Accounts.Models.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Models/obj/Debug/net8.0/Accounts.Models.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Models/obj/Debug/net8.0/Accounts.Models.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Models/obj/Debug/net8.0/Accounts.Models.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Models/obj/Debug/net8.0/Accounts.Models.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Models/obj/Debug/net8.0/Accounts.Models.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Models/obj/Debug/net8.0/Accounts.Models.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Models/obj/Debug/net8.0/Accounts.Models.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Models/obj/Debug/net8.0/Accounts.Models.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Models/obj/Debug/net8.0/Accounts.Models.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Models/obj/Debug/net8.0/Accounts.Models.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Models/obj/Debug/net8.0/Accounts.Models.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Models/obj/Debug/net8.0/Accounts.Models.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Models/obj/Debug/net8.0/Accounts.Models.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Models/obj/Debug/net8.0/Accounts.Models.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Models/obj/Debug/net8.0/Accounts.Models.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Models/obj/Debug/net8.0/Accounts.Models.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Models/obj/Debug/net8.0/Accounts.Models.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Models/obj/Debug/net8.0/Accounts.Models.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Models/obj/Debug/net8.0/Accounts.Models.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Models/obj/Debug/net8.0/Accounts.Models.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Models/obj/Debug/net8.0/Accounts.Models.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Models/obj/Debug/net8.0/ref/Accounts.Models.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Models/obj/Debug/net8.0/ref/Accounts.Models.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Models/obj/Debug/net8.0/refint/Accounts.Models.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Models/obj/Debug/net8.0/refint/Accounts.Models.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Models/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Models/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Models/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Models/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Models/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Models/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Models/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Models/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Models/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Models/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Repository/bin/Debug/net8.0/Accounts.Models.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Repository/bin/Debug/net8.0/Accounts.Models.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Repository/bin/Debug/net8.0/Accounts.Models.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Repository/bin/Debug/net8.0/Accounts.Models.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Repository/bin/Debug/net8.0/Accounts.Repository.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Repository/bin/Debug/net8.0/Accounts.Repository.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Repository/bin/Debug/net8.0/Accounts.Repository.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Repository/bin/Debug/net8.0/Accounts.Repository.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Repository/obj/Accounts.Repository.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Repository/obj/Accounts.Repository.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Repository/obj/Accounts.Repository.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Repository/obj/Accounts.Repository.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Repository/obj/Accounts.Repository.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Repository/obj/Accounts.Repository.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Repository/obj/Debug/net8.0/Accounts.Repository.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Repository/obj/Debug/net8.0/Accounts.Repository.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Repository/obj/Debug/net8.0/Accounts.Repository.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Repository/obj/Debug/net8.0/Accounts.Repository.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Repository/obj/Debug/net8.0/Accounts.Repository.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Repository/obj/Debug/net8.0/Accounts.Repository.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Repository/obj/Debug/net8.0/Accounts.Repository.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Repository/obj/Debug/net8.0/Accounts.Repository.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Repository/obj/Debug/net8.0/Accounts.Repository.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Repository/obj/Debug/net8.0/Accounts.Repository.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Repository/obj/Debug/net8.0/Accounts.Repository.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Repository/obj/Debug/net8.0/Accounts.Repository.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Repository/obj/Debug/net8.0/Accounts.Repository.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Repository/obj/Debug/net8.0/Accounts.Repository.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Repository/obj/Debug/net8.0/Accounts.Repository.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Repository/obj/Debug/net8.0/Accounts.Repository.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Repository/obj/Debug/net8.0/Accounts.Repository.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Repository/obj/Debug/net8.0/Accounts.Repository.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Repository/obj/Debug/net8.0/Accounts.Repository.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Repository/obj/Debug/net8.0/Accounts.Repository.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Repository/obj/Debug/net8.0/Accounts.Repository.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Repository/obj/Debug/net8.0/Accounts.Repository.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Repository/obj/Debug/net8.0/ref/Accounts.Repository.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Repository/obj/Debug/net8.0/ref/Accounts.Repository.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Repository/obj/Debug/net8.0/refint/Accounts.Repository.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Repository/obj/Debug/net8.0/refint/Accounts.Repository.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Repository/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Repository/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Repository/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Repository/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Repository/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Repository/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Repository/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Repository/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Repository/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Repository/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Service/bin/Debug/net8.0/Accounts.Models.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/bin/Debug/net8.0/Accounts.Models.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Service/bin/Debug/net8.0/Accounts.Models.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/bin/Debug/net8.0/Accounts.Models.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Service/bin/Debug/net8.0/Accounts.Repository.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/bin/Debug/net8.0/Accounts.Repository.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Service/bin/Debug/net8.0/Accounts.Repository.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/bin/Debug/net8.0/Accounts.Repository.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Service/bin/Debug/net8.0/Accounts.Service.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/bin/Debug/net8.0/Accounts.Service.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Service/bin/Debug/net8.0/Accounts.Service.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/bin/Debug/net8.0/Accounts.Service.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Service/bin/Debug/net8.0/Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/bin/Debug/net8.0/Shared.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Service/bin/Debug/net8.0/Shared.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/bin/Debug/net8.0/Shared.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Service/obj/Accounts.Service.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/obj/Accounts.Service.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Service/obj/Accounts.Service.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/obj/Accounts.Service.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Service/obj/Accounts.Service.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/obj/Accounts.Service.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Service/obj/Debug/net8.0/Accounts.Service.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/obj/Debug/net8.0/Accounts.Service.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Service/obj/Debug/net8.0/Accounts.Service.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/obj/Debug/net8.0/Accounts.Service.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Service/obj/Debug/net8.0/Accounts.Service.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/obj/Debug/net8.0/Accounts.Service.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Service/obj/Debug/net8.0/Accounts.Service.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/obj/Debug/net8.0/Accounts.Service.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Service/obj/Debug/net8.0/Accounts.Service.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/obj/Debug/net8.0/Accounts.Service.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Service/obj/Debug/net8.0/Accounts.Service.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/obj/Debug/net8.0/Accounts.Service.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Service/obj/Debug/net8.0/Accounts.Service.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/obj/Debug/net8.0/Accounts.Service.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Service/obj/Debug/net8.0/Accounts.Service.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/obj/Debug/net8.0/Accounts.Service.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Service/obj/Debug/net8.0/Accounts.Service.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/obj/Debug/net8.0/Accounts.Service.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Service/obj/Debug/net8.0/Accounts.Service.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/obj/Debug/net8.0/Accounts.Service.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Service/obj/Debug/net8.0/Accounts.Service.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/obj/Debug/net8.0/Accounts.Service.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Service/obj/Debug/net8.0/ref/Accounts.Service.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/obj/Debug/net8.0/ref/Accounts.Service.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.Service/obj/Debug/net8.0/refint/Accounts.Service.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/obj/Debug/net8.0/refint/Accounts.Service.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Service/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Service/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Service/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Service/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.Service/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/bin/Debug/net8.0/Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/bin/Debug/net8.0/Shared.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/bin/Debug/net8.0/Shared.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/bin/Debug/net8.0/Shared.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shared/obj/Debug/net8.0/Shared.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/Debug/net8.0/Shared.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shared/obj/Debug/net8.0/Shared.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/Debug/net8.0/Shared.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/obj/Debug/net8.0/Shared.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/Debug/net8.0/Shared.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/obj/Debug/net8.0/Shared.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/Debug/net8.0/Shared.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/obj/Debug/net8.0/Shared.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/Debug/net8.0/Shared.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/obj/Debug/net8.0/Shared.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/Debug/net8.0/Shared.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/obj/Debug/net8.0/Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/Debug/net8.0/Shared.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/obj/Debug/net8.0/Shared.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/Debug/net8.0/Shared.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/obj/Debug/net8.0/Shared.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/Debug/net8.0/Shared.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/obj/Debug/net8.0/ref/Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/Debug/net8.0/ref/Shared.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/obj/Debug/net8.0/refint/Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/Debug/net8.0/refint/Shared.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/obj/Shared.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/Shared.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/obj/Shared.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/Shared.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,29 +170,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.Accounts.API: http.executor&quot;: &quot;Run&quot;,
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.Accounts.API: http.executor": "Run",
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\ASUS\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\ASUS\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Accounts.API: http">
     <configuration name="Accounts.API: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Accounts.API/Accounts.API.csproj" />
@@ -221,5 +299,9 @@
     <MESSAGE value="init" />
     <MESSAGE value="added topup gateway" />
     <option name="LAST_COMMIT_MESSAGE" value="added topup gateway" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
