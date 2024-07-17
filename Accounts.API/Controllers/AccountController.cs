@@ -39,12 +39,18 @@ namespace Accounts.Api.Controllers
         public async Task<IActionResult> Register(UserRegisterDto userRegisterDto)
         {
             var user = await _userService.RegisterUserAsync(userRegisterDto);
-            var message = new WalletCreateMessage
+            var walletCreateMessage = new WalletCreateMessage
             {
                 UserId = user.Id
             };
-            Console.WriteLine($"Published message: {message}");
-            await _bus.PubSub.PublishAsync(message);
+            var portfolioCreateMessage = new CreatePortfolioMessage
+            {
+                userId = user.Id
+            };
+            await _bus.PubSub.PublishAsync(walletCreateMessage);
+            Console.WriteLine($"Published message: {walletCreateMessage}");
+            await _bus.PubSub.PublishAsync(portfolioCreateMessage);
+            Console.WriteLine($"Published message: {portfolioCreateMessage}");
             return CreatedAtAction(nameof(GetUserById), new { id = user.Id }, user);
         }
 
@@ -191,6 +197,14 @@ namespace Accounts.Api.Controllers
             if (response.IsSuccessStatusCode)
             {
                 var transactions = await response.Content.ReadAsStringAsync();
+                var addInvestmentMessage = new AddInvestmentMessage
+                {
+                    userId = _jwtToken.ExtractIdFromJwtToken(token),
+                    amount = investTransactDto.Amount,
+                    projectId = investTransactDto.ProjectId
+                };
+                await _bus.PubSub.PublishAsync(addInvestmentMessage);
+                Console.WriteLine($"Published message: {addInvestmentMessage}");
                 return Ok(transactions);
             }
             return StatusCode((int)response.StatusCode, await response.Content.ReadAsStringAsync());

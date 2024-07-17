@@ -10,12 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61c61317-eb10-42d2-84c1-d330ec66d87f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/apphost" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Accounts.Models/Dtos/InvestTransactDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Accounts.Models/Dtos/ProjectDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Messages/AddInvestmentMessage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Messages/CreatePortfolioMessage.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Accounts/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Accounts/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.API/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/Controllers/AccountController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.API/bin/Debug/net8.0/Accounts.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/bin/Debug/net8.0/Accounts.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.API/bin/Debug/net8.0/Accounts.API.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/bin/Debug/net8.0/Accounts.API.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.API/bin/Debug/net8.0/Accounts.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/bin/Debug/net8.0/Accounts.API.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.API/bin/Debug/net8.0/Accounts.Models.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/bin/Debug/net8.0/Accounts.Models.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.API/bin/Debug/net8.0/Accounts.Models.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/bin/Debug/net8.0/Accounts.Models.pdb" afterDir="false" />
@@ -39,6 +39,7 @@
       <change beforePath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/ref/Accounts.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/ref/Accounts.API.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/refint/Accounts.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/refint/Accounts.API.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Accounts.API.props" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Accounts.API.props" afterDir="false" />
@@ -170,30 +171,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.Accounts.API: http.executor": "Run",
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.Accounts.API: http.executor&quot;: &quot;Run&quot;,
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\ASUS\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\ASUS\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Accounts.API: http">
     <configuration name="Accounts.API: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Accounts.API/Accounts.API.csproj" />
@@ -258,6 +259,9 @@
       <workItem from="1718576984525" duration="1734000" />
       <workItem from="1719103180632" duration="79000" />
       <workItem from="1719160010381" duration="1408000" />
+      <workItem from="1721238332408" duration="565000" />
+      <workItem from="1721238986506" duration="22000" />
+      <workItem from="1721240240098" duration="1451000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />

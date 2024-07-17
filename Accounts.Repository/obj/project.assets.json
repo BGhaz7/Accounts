@@ -2733,32 +2733,34 @@
     ]
   },
   "packageFolders": {
-    "/Users/badr/.nuget/packages/": {}
+    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/badr/RiderProjects/Accounts/Accounts.Repository/Accounts.Repository.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Accounts.Repository\\Accounts.Repository.csproj",
       "projectName": "Accounts.Repository",
-      "projectPath": "/Users/badr/RiderProjects/Accounts/Accounts.Repository/Accounts.Repository.csproj",
-      "packagesPath": "/Users/badr/.nuget/packages/",
-      "outputPath": "/Users/badr/RiderProjects/Accounts/Accounts.Repository/obj/",
+      "projectPath": "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Accounts.Repository\\Accounts.Repository.csproj",
+      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Accounts.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/badr/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/badr/RiderProjects/Accounts/Accounts.Models/Accounts.Models.csproj": {
-              "projectPath": "/Users/badr/RiderProjects/Accounts/Accounts.Models/Accounts.Models.csproj"
+            "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Accounts.Models\\Accounts.Models.csproj": {
+              "projectPath": "C:\\Users\\ASUS\\RiderProjects\\Accounts\\Accounts.Models\\Accounts.Models.csproj"
             }
           }
         }
@@ -2818,7 +2820,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
