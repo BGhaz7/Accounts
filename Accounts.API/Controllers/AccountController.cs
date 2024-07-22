@@ -95,7 +95,7 @@ namespace Accounts.Api.Controllers
             var userId = _jwtToken.ExtractIdFromJwtToken(token);
             var client = _httpClientFactory.CreateClient();
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-            var response = await client.GetAsync($"http://localhost:5249/v1/payments/transactions/{userId}");
+            var response = await client.GetAsync($"http://payment:8080/v1/payments/transactions/{userId}");
             if (response.IsSuccessStatusCode)
             {
                 var transactions = await response.Content.ReadAsStringAsync();
@@ -116,7 +116,7 @@ namespace Accounts.Api.Controllers
             var requestContent =
                 new StringContent(JsonConvert.SerializeObject(new { UserId = userId, topUpDto.Amount }), Encoding.UTF8,
                     "application/json");
-            var response = await client.PostAsync($"http://localhost:5249/v1/payments/topup", requestContent);
+            var response = await client.PostAsync($"http://payment:8080/v1/payments/topup", requestContent);
             if (response.IsSuccessStatusCode)
             {
                 var transactions = await response.Content.ReadAsStringAsync();
@@ -155,7 +155,7 @@ namespace Accounts.Api.Controllers
                     "application/json");
             var client = _httpClientFactory.CreateClient();
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-            var response = await client.PostAsync("http://localhost:5013/v1/project",requestContent);
+            var response = await client.PostAsync("http://investment:8080/v1/project",requestContent);
             if (response.IsSuccessStatusCode)
             {
                 var transactions = await response.Content.ReadAsStringAsync();
@@ -172,7 +172,7 @@ namespace Accounts.Api.Controllers
             var token = authHeader.Substring("Bearer ".Length).Trim();
             var client = _httpClientFactory.CreateClient();
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-            var response = await client.GetAsync("http://localhost:5013/v1/projects");
+            var response = await client.GetAsync("http://investment:8080/v1/projects");
             if (response.IsSuccessStatusCode)
             {
                 var transactions = await response.Content.ReadAsStringAsync();
@@ -193,7 +193,7 @@ namespace Accounts.Api.Controllers
                     "application/json");
             var client = _httpClientFactory.CreateClient();
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-            var response = await client.PostAsync("http://localhost:5013/v1/invest", requestContent);
+            var response = await client.PostAsync("http://investment:8080/v1/invest", requestContent);
             if (response.IsSuccessStatusCode)
             {
                 var transactions = await response.Content.ReadAsStringAsync();
