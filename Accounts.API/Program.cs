@@ -11,6 +11,7 @@ using EasyNetQ;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Portfolio.Repository.DbContext;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,7 +23,7 @@ builder.Services.AddDbContext<AccountsContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("PostGresConnectionString")));
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
-builder.Services.AddSingleton(RabbitHutch.CreateBus("host=localhost"));
+builder.Services.AddSingleton(RabbitHutch.CreateBus("host=rabbitmq"));
 builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
 builder.Services.AddSingleton<pwHasher>();
 builder.Services.AddHttpClient();
@@ -70,6 +71,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 
 var app = builder.Build();
+DbMgmt.MigrationInit(app);
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -81,4 +83,5 @@ if (app.Environment.IsDevelopment())
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
+app.Urls.Add("http://*:5031");
 app.Run();
