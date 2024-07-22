@@ -9,20 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61c61317-eb10-42d2-84c1-d330ec66d87f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Accounts/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Accounts/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts.API/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/Controllers/AccountController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/Accounts.API.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts.Models/obj/Debug/net8.0/Accounts.Models.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Models/obj/Debug/net8.0/Accounts.Models.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts.Models/obj/Debug/net8.0/Accounts.Models.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Models/obj/Debug/net8.0/Accounts.Models.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts.Repository/obj/Debug/net8.0/Accounts.Repository.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Repository/obj/Debug/net8.0/Accounts.Repository.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts.Repository/obj/Debug/net8.0/Accounts.Repository.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Repository/obj/Debug/net8.0/Accounts.Repository.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts.Service/obj/Debug/net8.0/Accounts.Service.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/obj/Debug/net8.0/Accounts.Service.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts.Service/obj/Debug/net8.0/Accounts.Service.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.Service/obj/Debug/net8.0/Accounts.Service.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/obj/Debug/net8.0/Shared.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/Debug/net8.0/Shared.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/obj/Debug/net8.0/Shared.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/Debug/net8.0/Shared.AssemblyInfoInputs.cache" afterDir="false" />
-    </list>
+    <list default="true" id="61c61317-eb10-42d2-84c1-d330ec66d87f" name="Changes" comment="fixed endpoints for docker compose" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,8 +26,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/ASUS/RiderProjects/Accounts/Accounts.API/Controllers/AccountController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Accounts.API/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/ASUS/RiderProjects/Accounts/Accounts.API/obj/Debug/net8.0/Accounts.API.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -176,7 +163,7 @@
       <workItem from="1721537925485" duration="1451000" />
       <workItem from="1721553965868" duration="124000" />
       <workItem from="1721554809953" duration="3174000" />
-      <workItem from="1721618988030" duration="1651000" />
+      <workItem from="1721618988030" duration="2107000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -210,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721610849870</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fixed endpoints for docker compose">
+      <option name="closed" value="true" />
+      <created>1721621028906</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1721621028906</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +230,8 @@
     <MESSAGE value="added topup gateway" />
     <MESSAGE value="changed messaging" />
     <MESSAGE value="Add docker support + DB management for migrations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add docker support + DB management for migrations" />
+    <MESSAGE value="fixed endpoints for docker compose" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed endpoints for docker compose" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

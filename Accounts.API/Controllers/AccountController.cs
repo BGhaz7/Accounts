@@ -134,7 +134,7 @@ namespace Accounts.Api.Controllers
             var userId = _jwtToken.ExtractIdFromJwtToken(token);
             var client = _httpClientFactory.CreateClient();
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-            var response = await client.GetAsync($"http://localhost:5249/v1/payments/wallet/{userId}");
+            var response = await client.GetAsync($"http://payment:8080/v1/payments/wallet/{userId}");
             if (response.IsSuccessStatusCode)
             {
                 var transactions = await response.Content.ReadAsStringAsync();
