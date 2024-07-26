@@ -209,5 +209,40 @@ namespace Accounts.Api.Controllers
             }
             return StatusCode((int)response.StatusCode, await response.Content.ReadAsStringAsync());
         }
+        
+        [Authorize]
+        [HttpGet("portfolio")]
+        public async Task<IActionResult> portfolio()
+        {
+            var authHeader = Request.Headers["Authorization"].ToString();
+            var token = authHeader.Substring("Bearer ".Length).Trim();
+            var client = _httpClientFactory.CreateClient();
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            var response = await client.GetAsync("http://portfolio:8080/v1/portfolio/portfolio");
+            if (response.IsSuccessStatusCode)
+            {
+                var portfolio = await response.Content.ReadAsStringAsync();
+                return Ok(portfolio);
+            }
+            return StatusCode((int)response.StatusCode, await response.Content.ReadAsStringAsync());
+        }
+        
+        [Authorize]
+        [HttpGet("portfolio/{projectid}")]
+        public async Task<IActionResult> portfolio(Guid projectid)
+        {
+            var authHeader = Request.Headers["Authorization"].ToString();
+            var token = authHeader.Substring("Bearer ".Length).Trim();
+            var client = _httpClientFactory.CreateClient();
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            var response = await client.GetAsync("http://portfolio:8080/v1/portfolio/portfolio/" + projectid);
+            if (response.IsSuccessStatusCode)
+            {
+                var portfolioProject = await response.Content.ReadAsStringAsync();
+                return Ok(portfolioProject);
+            }
+            return StatusCode((int)response.StatusCode, await response.Content.ReadAsStringAsync());
+        }
+        
     }
 }
